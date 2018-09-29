@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-public class Topk{//个人认为复杂度为O(n)
+public class Topk{//使用快排的partition思想，每次都丢掉一半，我计算的复杂度为O(n)
     public ArrayList<Integer> GetLeastNumbers_Solution(int [] input, int k) {
         ArrayList<Integer> res=new ArrayList<Integer>();
         if(input.length==0 || k<=0 || k>input.length) return res;
